@@ -132,11 +132,19 @@ Proje yönetimi için jira vb projeler yerine taiga kullanarak ,ister vps’sini
 taiga.io üzerinden kullanabilirsiniz.
 1. https://taiga.io/
 
-### Webservis(reverse proxy)
+### Webservisler ve proxyler
+#### Webservisler için reverse proxy
 Eğer milyonlarca requesti bir anda yönetmeyecekseniz(muhtemelen yönetmeyeceksiniz) .Caddy kullanmak oldukça iyi bir opsiyondur çünkü
 1. Otomatik olarak certbot ile otomatik olarak ssl kurulumu yapar
 2. Caddy çok daha basit bir konfigürasyon yapısına sahiptir
-3. HTTP/2 ve HTTP3 desteğine sahiptir ancak caddyde HTTP/3  desteği varsayılan olarak gelir..
+3. HTTP/2 ve HTTP3 desteğine sahiptir ancak caddyde HTTP/3  desteği varsayılan olarak gelir.
+
+https://caddyserver.com/
+
+#### Proxy
+Eğer kapalı vpn kurmak yerine parola koruması ile bir proxy kurmak isterseniz ve basit bir yapı lazım ise squid proxy tam sizler için tls'de takılmıyor ,kurulumda kafa ağrıtmıyor.(Örneğin mitm proxy kullandığınızda tls'de takılıyor.)
+
+https://www.squid-cache.org/
 
 ### Versiyon kontrol sistemi
 1. Eğer ekibiniz acemi ise githubta bir organizasyon açmanız daha sağlıklı olur.Ek olarak github workflow ve entegrasyonlarla sürecinizi daha rahat yönetebilirsiniz.
