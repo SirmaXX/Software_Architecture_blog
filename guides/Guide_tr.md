@@ -33,7 +33,7 @@ Yapabileceğiniz en basit ihtiyaç belirleme süreci paylaşayım.
 Projeleriniz için SDD (software development document) dökümanları hazırlamak sizin için faydalı olacaktır.Çünkü ihtiyaçları ve geliştirilecek yazılım bütün sürecini derleyip toplayarak yazılım geliştirme sürecinizi daha kısa ve kaliteli hale getirecektir.
 
 ### Geliştirme ortamı seçimi
-Bu süreç ekibinizin kalitesine ve uyum kabiliyetine bağlıdır.Ancak en temel olarak şu soruları sorarak ortalama sağlıklı karar alabilirsiniz.<br>
+Geliştirme ortamı ekibin adaptasyon yeteneğine bağlıdır.Varsayılan olarak ,web servisleri ve web geliştirme sürecini ele alalım.En temel olarak şu soruları sorarak ortalama sağlıklı karar alabilirsiniz.<br>
 1. Ekipteki kişilerin en çok kullandığı front-end frameworkleri
 2.  Ekipteki kişilerin en çok kullandığı backend frameworkleri
 3. Ekipteki kişilerin en çok kullandığı veritabanı sistemleri <br>
@@ -179,11 +179,11 @@ Bundan sonrası zaten güvenlik ekibinin (blue team'in ) işi.
        
 
  ### Diagramlar ve planlama sistemleri
-Dia ve draw.io kullanarak planlama için c4model veya uml diagramları çizmek için kullanabilirsiniz.
+Dia ve draw.io kullanarak planlama için c4model ve/veya uml diagramları çizmek için kullanabilirsiniz.
  ### IOT & Elektronik ihtiyaçlar
 Eğer elektronikte acemi iseniz.Sensörlerle ilgili ihtiyaçlarınız mevcutsa esp32  ancak işletim sistemine sahip bir elektronik cihaz lazım ise rasberyy-pi  kullanabilirsiniz.Maliyet ve kullanım açısındanda acemiler için uygun.
 
-Eğer işletim sistemine sahip iot cihazınız varsa , ssh tarafındada kopukluklar yaşarsanız .Modemden port açıp yönetebiliriz.
+Eğer işletim sistemine sahip iot cihazınız varsa , ssh tarafındada kopukluklar yaşarsanız .Modemden port açıp cockpit ile linux tabanlı cihazını yönetebilirsiniz.
 
 1. Cockpit 
 https://cockpit-project.org/
