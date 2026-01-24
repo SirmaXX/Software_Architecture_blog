@@ -6,6 +6,10 @@ Sorumlu  / İnsiyatif alan kişilerinde en azından obsesyonlarını biraz bast�
 Çünkü imkanlar kısıtlı ve her kuruş değerli olduğundan,kullandığım ve tavsiye edilen açık kaynak platform önerileriyle beraber, kendi çapımda bir rehber hazırlamak istedim. 
 
 
+## Rehber
+guides/Guide_tr.md
+
+rehbere guides klasörüne giderek erişebilirsiniz.
 ## Nasıl Katkı sağlayabilirim
 
 1. Repoyu forklayın

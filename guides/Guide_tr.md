@@ -38,7 +38,20 @@ Bu süreç ekibinizin kalitesine ve uyum kabiliyetine bağlıdır.Ancak en temel
 2.  Ekipteki kişilerin en çok kullandığı backend frameworkleri
 3. Ekipteki kişilerin en çok kullandığı veritabanı sistemleri <br>
 
-Büyük sayılar kanunu çoğu zaman işe yarar :) .
+Büyük sayılar kanunu çoğu zaman işe yarar :) .</br>Ancak anlaşmazlık yada ihtiyaçlara bağlı tercih yapmak isterseniz şu şekilde sizlere kişisel tavsiyelerde bulunabilirim.
+
+#### Frontend framework ve kütüphane Seçimi
+1. Eğer statik sayfalara sahipseniz veya az sayfaya sahipseniz :Basit bir bootstrap veya herhangi bir css kütüphanesi ve jquery gibi birkaç  kütüphane sizin işinize gerek kalmayacaktır.Basit ajax requestleriyle veri alıp verebilirsiniz(monolith yapı kurgulayarak)
+
+2. Eğer componentleri ,ekranları yenilenen sürekli yenilenen ve fazla sayfa yapısına sahip çok katmanlı yada birçok servisin bir arada bulunduğu durumda tercihim :svelte framework olur.
+
+#### Backend framework ve kütüphane Seçimi 
+Bu tavsiyelerim tamamen kişiler deneyimlerimden ortaya çıkan bir listedir.
+1. Eğer oyun geliştirmek isterseniz ve çok fazla asenkron işlem varsa :nodejs-express
+2. Eğer analitik bir servis yada microservice geliştiriceksem :FastAPI
+3. Eğer basit crud işleri yada ufak bir proje geliştiriceksem:Flask microframework 
+kullanmak mantıklı olacaktır.
+
 ## Yazılım geliştirme alanı kaynakları
 Bir yazılım mimarı & full stack developer olarak yazılım geliştirme alanında geniş bir fotoğraf
 çekmek veya eksiklerinizi görmek isterseniz.Bu kaynaklar sizler için oldukça faydalı olacaktır.
@@ -126,7 +139,9 @@ Eğer milyonlarca requesti bir anda yönetmeyecekseniz(muhtemelen yönetmeyeceks
 3. HTTP/2 ve HTTP3 desteğine sahiptir ancak caddyde HTTP/3  desteği varsayılan olarak gelir..
 
 ### Versiyon kontrol sistemi
-Eğer ekibiniz acemi ise githubta bir organizasyon açmanız daha sağlıklı olur.Ek olarak github workflow ve entegrasyonlarla sürecinizi daha rahat yönetebilirsiniz.Eğer ekibiniz tecrübeli veya gizlilik gerektiren bir sürece sahipseniz.Vps’sinize gitlab kurabilirsiniz.(Bu yönetim maliyeti getirir)
+1. Eğer ekibiniz acemi ise githubta bir organizasyon açmanız daha sağlıklı olur.Ek olarak github workflow ve entegrasyonlarla sürecinizi daha rahat yönetebilirsiniz.
+
+2. Eğer ekibiniz tecrübeli veya gizlilik gerektiren bir sürece sahipseniz.Vps’sinize gitlab kurabilirsiniz.(Bu yönetim maliyeti getirir)
 https://about.gitlab.com/ 
 Ek olarak bu sayede CD/Cl süreçlerinide bu araçlar vesilesi ile gerçek hayata aktarabilirsiniz.
 
