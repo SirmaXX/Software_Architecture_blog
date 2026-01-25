@@ -1,6 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yazılım Mühendisliği Rehberi</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Highlight.js for code syntax highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Yazılım mühendisliği, proje yönetimi ve teknik altyapı seçimleri üzerine kapsamlı bir rehber.">
+    <meta name="theme-color" content="#0a0a0c">
+</head>
+<body>
 
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">Founding Engineer<br>Guide</div>
+            </div>
+            <div class="toc-nav" id="toc-nav">
+                <!-- TOC will be generated here -->
+            </div>
+        </nav>
 
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <div id="content">
+                <!-- Markdown content will be rendered here -->
+            </div>
+            
+            <footer style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border-color); color: var(--text-muted); font-size: 0.9rem;">
+                <p>&copy; 2026 Software Architecture Blog. All rights reserved.</p>
+            </footer>
+        </main>
+    </div>
 
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="menu-btn" aria-label="Menu">
+        ☰
+    </button>
+
+    <!-- Markdown Parser & Highlighter -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <!-- Raw Markdown Content -->
+    <script type="text/markdown" id="markdown-source">
 ## Eğitim ve roadmap
 Artık ürünlerin ,bilgisayar bilimleri veya bilişim mesleklerindeki branşlaşmaların arttığı ve 5-6
 sene öncesine nazaran ürünler daha detaylı olduğu bir süreçteyiz(yapay zeka geliştirmeyen kurum
@@ -209,3 +256,89 @@ https://cockpit-project.org/
     8. https://rihab-feki.medium.com/building-a-modern-data-warehouse-from-scratch-d18d346a7118
 
     9. https://www.linkedin.com/pulse/ihtiya%C3%A7-analizi-kim-i%C3%A7in-ne-%C3%BCretmeli-fatih-candan-5kobf/
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const rawMarkdown = document.getElementById('markdown-source').textContent;
+            const contentDiv = document.getElementById('content');
+            const tocNav = document.getElementById('toc-nav');
+
+            // Configure marked with highlight.js
+            marked.setOptions({
+                highlight: function(code, lang) {
+                    const language = highlight.getLanguage(lang) ? lang : 'plaintext';
+                    return highlight.highlight(code, { language }).value;
+                },
+                langPrefix: 'hljs language-'
+            });
+
+            // Render Markdown
+            contentDiv.innerHTML = marked.parse(rawMarkdown);
+
+            // Generate TOC and Add IDs to headers
+            const headers = contentDiv.querySelectorAll('h1, h2, h3');
+            const tocList = document.createElement('ul');
+            
+            headers.forEach((header, index) => {
+                const id = 'header-' + index;
+                header.id = id;
+
+                // Create TOC item
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = '#' + id;
+                a.textContent = header.textContent;
+                
+                // Indent based on level
+                if (header.tagName === 'H3') {
+                    a.classList.add('toc-h3');
+                } else if (header.tagName === 'H2') {
+                    a.classList.add('toc-h2');
+                } else {
+                    a.classList.add('toc-h1');
+                }
+
+                li.appendChild(a);
+                tocList.appendChild(li);
+            });
+
+            tocNav.appendChild(tocList);
+
+            // Active State Helper (Intersection Observer)
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.id;
+                        document.querySelectorAll('.toc-nav a').forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href') === '#' + id) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }, { rootMargin: '-100px 0px -66%' });
+
+            headers.forEach(header => observer.observe(header));
+
+            // Mobile Menu Toggle
+            const menuBtn = document.getElementById('menu-btn');
+            const sidebar = document.getElementById('sidebar');
+
+            menuBtn.addEventListener('click', () => {
+                sidebar.classList.toggle('active');
+            });
+
+            // Close sidebar when clicking a link on mobile
+            document.querySelectorAll('.toc-nav a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth <= 1024) {
+                        sidebar.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
