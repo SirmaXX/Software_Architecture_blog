@@ -52,6 +52,9 @@ Bu tavsiyelerim tamamen kişiler deneyimlerimden ortaya çıkan bir listedir.
 3. Eğer basit crud işleri yada ufak bir proje geliştiriceksem:Flask microframework 
 kullanmak mantıklı olacaktır.
 
+
+
+
 ## Yazılım geliştirme alanı kaynakları
 Bir yazılım mimarı & full stack developer olarak yazılım geliştirme alanında geniş bir fotoğraf
 çekmek veya eksiklerinizi görmek isterseniz.Bu kaynaklar sizler için oldukça faydalı olacaktır.
@@ -60,13 +63,21 @@ Bir yazılım mimarı & full stack developer olarak yazılım geliştirme alanı
 3. Master Software Architecure A pracmatic guide -MACIEJ “MJ” jedrzejewski
 4. The Self-Taught Programmer_ The Definitive Guide to Programming Professionally-Cory
 althoff
+5. https://kurumsaljava.com/2009/01/15/bizimalemcom-bir-sistemin-tasarlanis-hikayesi/  uçtan uca bir proje kesinlikle bu bloğu okumalısınız.
+
+6. https://bytebytego.com/guides/the-ultimate-software-architect-knowledge-map/
 
 
 ### Yazılım geliştirme süreci antremanı
+
+<img src="images/tr_images/mimari.gif">
+
 Eğer bir junior geliştirici iseniz veya tek alanda çok fazla vakit harcadıysanız şu egzersizi
 yapmanızı veya bir proje geliştirmenizi isteyeceğim. Uçtan uca sürecin nasıl bir şey olduğunu
 anlamanızda oldukça faydalı olacaktır.
+
 1. Yazılımı geliştireceğiniz alanı araştırın.O mesleği yapan insanlarla konuşun.
+
 2. Bir yazılım geliştirme dökümanı hazırlayın.
 3. Bir domain ve bir vps satın alın.
 4. Bir monolith ,birkaç katmanlı veya birkaç mikroservis geliştirin.
@@ -153,6 +164,11 @@ https://www.squid-cache.org/
 https://about.gitlab.com/ 
 Ek olarak bu sayede CD/Cl süreçlerinide bu araçlar vesilesi ile gerçek hayata aktarabilirsiniz.
 
+#### Birkaç tavsiye
+1. Githubta dependabot ile ücretsiz bir şekilde otomatik olarak paketlerin güncellenmesini ve bilinen açıkları kontrol edebilirsiniz.
+
+2. Opencode kurulumu yaparak ücretsiz şekilde kurallar ve issue yönetimi yapabilirsiniz.
+
 ### Api/endpoint dökümantasyonu
 Platform bağımsız kesinlikle swagger eklentisi kullanın.Teşekkür ediceksiniz(not:ürüne çıkarken kapatmayı unutmayın)
 
@@ -167,12 +183,23 @@ Sunucu tarafında kaynaklarınız kıt ise beszel ancak kaynaklarınız fazla is
 Hem bare metal hem docker tabanlı olarak  agentlarınızı rahatlıkla kurabilirsiniz.Gün sonunda kaynaklarınızı gözlemlemek ve sunucularınızda sorun olduğu taktirde alert sistemini devreye sokabilirsiniz.
 1. https://beszel.dev/guide/hub-installation
 
+#### Application monitoring & Tracing
+##### Tracing
+Bu süreçte ise atılacak her bir requestin hangi süreçte ne kadar süreyle devam ettiğini görebiliriz.
+https://github.com/jaegertracing/jaeger-ui
+### Load balance & Cache
 
 
  ###  Test sistemleri
-Elbette yazılım geliştirme aşamasında ,test yazmak ve/veya  bunun için vakit harcamak oldukça can sıkıcı farkındayım.Eğer test konusunda tembellik yapmak isterseniz en azından google lighthouse eklentisi kullanın.(Temel seviyede bir web uygulamasındaki gerekli kriterleri ve eksikliklerinizi raporlayacaktır)
-1. https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk
 
+<img src="images/tr_images/apitesting.jpeg">
+
+Elbette yazılım geliştirme aşamasında ,test yazmak ve/veya  bunun için vakit harcamak oldukça can sıkıcı farkındayım.Eğer test konusunda tembellik yapmak isterseniz en azından google lighthouse eklentisi kullanın.(Temel seviyede bir web uygulamasındaki gerekli kriterleri ve eksikliklerinizi raporlayacaktır)
+
+1. https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk
+2. Kullandığınız programın test framework'üne göre unit test yazabilirsiniz.
+
+### CPU & Memory Flame Graphs
 
  ### Güvenlik 
 İşte şimdi işin rengi oldukça değişecektir.Hiçbir zaman yatırımın yeterli olmadığı ancak çoğu kurumun veya kişinin yetişemediği bir alan ,ancak basit ve etkili birkaç tavsiye verebilirim.

@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yazılım Mühendisliği Rehberi</title>
+    <title>Lead Developer Rehberi</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Highlight.js for code syntax highlighting -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
-    
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+
     <!-- Meta tags for SEO -->
-    <meta name="description" content="Yazılım mühendisliği, proje yönetimi ve teknik altyapı seçimleri üzerine kapsamlı bir rehber.">
+    <meta name="description"
+        content="Yazılım mühendisliği, proje yönetimi ve teknik altyapı seçimleri üzerine kapsamlı bir rehber.">
     <meta name="theme-color" content="#0a0a0c">
 </head>
+
 <body>
 
     <div class="app-container">
         <!-- Sidebar Navigation -->
         <nav class="sidebar" id="sidebar">
             <div class="sidebar-header">
-                <div class="logo">Founding Engineer<br>Guide</div>
+                <div class="logo">Lead Developer<br>Guide</div>
             </div>
             <div class="toc-nav" id="toc-nav">
                 <!-- TOC will be generated here -->
@@ -30,8 +34,9 @@
             <div id="content">
                 <!-- Markdown content will be rendered here -->
             </div>
-            
-            <footer style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border-color); color: var(--text-muted); font-size: 0.9rem;">
+
+            <footer
+                style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border-color); color: var(--text-muted); font-size: 0.9rem;">
                 <p>&copy; 2026 Software Architecture Blog. All rights reserved.</p>
             </footer>
         </main>
@@ -48,6 +53,8 @@
 
     <!-- Raw Markdown Content -->
     <script type="text/markdown" id="markdown-source">
+
+
 ## Eğitim ve roadmap
 Artık ürünlerin ,bilgisayar bilimleri veya bilişim mesleklerindeki branşlaşmaların arttığı ve 5-6
 sene öncesine nazaran ürünler daha detaylı olduğu bir süreçteyiz(yapay zeka geliştirmeyen kurum
@@ -99,6 +106,9 @@ Bu tavsiyelerim tamamen kişiler deneyimlerimden ortaya çıkan bir listedir.
 3. Eğer basit crud işleri yada ufak bir proje geliştiriceksem:Flask microframework 
 kullanmak mantıklı olacaktır.
 
+
+
+
 ## Yazılım geliştirme alanı kaynakları
 Bir yazılım mimarı & full stack developer olarak yazılım geliştirme alanında geniş bir fotoğraf
 çekmek veya eksiklerinizi görmek isterseniz.Bu kaynaklar sizler için oldukça faydalı olacaktır.
@@ -110,10 +120,15 @@ althoff
 
 
 ### Yazılım geliştirme süreci antremanı
+
+<img src="images/tr_images/mimari.gif">
+
 Eğer bir junior geliştirici iseniz veya tek alanda çok fazla vakit harcadıysanız şu egzersizi
 yapmanızı veya bir proje geliştirmenizi isteyeceğim. Uçtan uca sürecin nasıl bir şey olduğunu
 anlamanızda oldukça faydalı olacaktır.
+
 1. Yazılımı geliştireceğiniz alanı araştırın.O mesleği yapan insanlarla konuşun.
+
 2. Bir yazılım geliştirme dökümanı hazırlayın.
 3. Bir domain ve bir vps satın alın.
 4. Bir monolith ,birkaç katmanlı veya birkaç mikroservis geliştirin.
@@ -200,6 +215,11 @@ https://www.squid-cache.org/
 https://about.gitlab.com/ 
 Ek olarak bu sayede CD/Cl süreçlerinide bu araçlar vesilesi ile gerçek hayata aktarabilirsiniz.
 
+#### Birkaç tavsiye
+1. Githubta dependabot ile ücretsiz bir şekilde otomatik olarak paketlerin güncellenmesini ve bilinen açıkları kontrol edebilirsiniz.
+
+2. Opencode kurulumu yaparak ücretsiz şekilde kurallar ve issue yönetimi yapabilirsiniz.
+
 ### Api/endpoint dökümantasyonu
 Platform bağımsız kesinlikle swagger eklentisi kullanın.Teşekkür ediceksiniz(not:ürüne çıkarken kapatmayı unutmayın)
 
@@ -214,12 +234,23 @@ Sunucu tarafında kaynaklarınız kıt ise beszel ancak kaynaklarınız fazla is
 Hem bare metal hem docker tabanlı olarak  agentlarınızı rahatlıkla kurabilirsiniz.Gün sonunda kaynaklarınızı gözlemlemek ve sunucularınızda sorun olduğu taktirde alert sistemini devreye sokabilirsiniz.
 1. https://beszel.dev/guide/hub-installation
 
+#### Application monitoring & Tracing
+##### Tracing
+Bu süreçte ise atılacak her bir requestin hangi süreçte ne kadar süreyle devam ettiğini görebiliriz.
+https://github.com/jaegertracing/jaeger-ui
+### Load balance & Cache
 
 
  ###  Test sistemleri
-Elbette yazılım geliştirme aşamasında ,test yazmak ve/veya  bunun için vakit harcamak oldukça can sıkıcı farkındayım.Eğer test konusunda tembellik yapmak isterseniz en azından google lighthouse eklentisi kullanın.(Temel seviyede bir web uygulamasındaki gerekli kriterleri ve eksikliklerinizi raporlayacaktır)
-1. https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk
 
+<img src="images/tr_images/apitesting.jpeg">
+
+Elbette yazılım geliştirme aşamasında ,test yazmak ve/veya  bunun için vakit harcamak oldukça can sıkıcı farkındayım.Eğer test konusunda tembellik yapmak isterseniz en azından google lighthouse eklentisi kullanın.(Temel seviyede bir web uygulamasındaki gerekli kriterleri ve eksikliklerinizi raporlayacaktır)
+
+1. https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk
+2. Kullandığınız programın test framework'üne göre unit test yazabilirsiniz.
+
+### CPU & Memory Flame Graphs
 
  ### Güvenlik 
 İşte şimdi işin rengi oldukça değişecektir.Hiçbir zaman yatırımın yeterli olmadığı ancak çoğu kurumun veya kişinin yetişemediği bir alan ,ancak basit ve etkili birkaç tavsiye verebilirim.
@@ -266,7 +297,7 @@ https://cockpit-project.org/
 
             // Configure marked with highlight.js
             marked.setOptions({
-                highlight: function(code, lang) {
+                highlight: function (code, lang) {
                     const language = highlight.getLanguage(lang) ? lang : 'plaintext';
                     return highlight.highlight(code, { language }).value;
                 },
@@ -279,7 +310,7 @@ https://cockpit-project.org/
             // Generate TOC and Add IDs to headers
             const headers = contentDiv.querySelectorAll('h1, h2, h3');
             const tocList = document.createElement('ul');
-            
+
             headers.forEach((header, index) => {
                 const id = 'header-' + index;
                 header.id = id;
@@ -289,7 +320,7 @@ https://cockpit-project.org/
                 const a = document.createElement('a');
                 a.href = '#' + id;
                 a.textContent = header.textContent;
-                
+
                 // Indent based on level
                 if (header.tagName === 'H3') {
                     a.classList.add('toc-h3');
@@ -341,4 +372,5 @@ https://cockpit-project.org/
         });
     </script>
 </body>
+
 </html>
