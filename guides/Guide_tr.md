@@ -74,7 +74,8 @@ althoff
 
 Eğer bir junior geliştirici iseniz veya tek alanda çok fazla vakit harcadıysanız şu egzersizi
 yapmanızı veya bir proje geliştirmenizi isteyeceğim. Uçtan uca sürecin nasıl bir şey olduğunu
-anlamanızda oldukça faydalı olacaktır.
+anlamanızda oldukça faydalı olacaktır.<br>
+Not: Dil modeli yada claude falan kullanılmayacak.
 
 1. Yazılımı geliştireceğiniz alanı araştırın.O mesleği yapan insanlarla konuşun.
 
@@ -158,11 +159,9 @@ Eğer kapalı vpn kurmak yerine parola koruması ile bir proxy kurmak isterseniz
 https://www.squid-cache.org/
 
 ### Versiyon kontrol sistemi
-1. Eğer ekibiniz acemi ise githubta bir organizasyon açmanız daha sağlıklı olur.Ek olarak github workflow ve entegrasyonlarla sürecinizi daha rahat yönetebilirsiniz.
+Eğer ekibiniz acemi veya versiyon kontrol sistemine kafa yormak istemiyorsanız,githubta bir organizasyon açmanız daha sağlıklı olur.Ek olarak github workflow ve entegrasyonlarla sürecinizi daha rahat yönetebilirsiniz.
 
-2. Eğer ekibiniz tecrübeli veya gizlilik gerektiren bir sürece sahipseniz.Vps’sinize gitlab kurabilirsiniz.(Bu yönetim maliyeti getirir)
-https://about.gitlab.com/ 
-Ek olarak bu sayede CD/Cl süreçlerinide bu araçlar vesilesi ile gerçek hayata aktarabilirsiniz.
+
 
 #### Birkaç tavsiye
 1. Githubta dependabot ile ücretsiz bir şekilde otomatik olarak paketlerin güncellenmesini ve bilinen açıkları kontrol edebilirsiniz.
@@ -176,11 +175,13 @@ Platform bağımsız kesinlikle swagger eklentisi kullanın.Teşekkür ediceksin
 ### Mail sistemi
 Eğer müşterilerinize mail sistemi kurmak isterseniz veya kendi sunucunuzda mail servisi  deploy etmek isterseniz  ve mail adminliği tecrübeniz yoksa modoboa sizler için birebir.Ek olarak docker tabanlı mailcow'da kullanabilirsiniz.
 1. https://modoboa.org/en/
+2. https://mailcow.email/
 
 
  ### Monitoring sistemi
 Sunucu tarafında kaynaklarınız kıt ise beszel ancak kaynaklarınız fazla ise zabbix kullanabilirsiniz.
 Hem bare metal hem docker tabanlı olarak  agentlarınızı rahatlıkla kurabilirsiniz.Gün sonunda kaynaklarınızı gözlemlemek ve sunucularınızda sorun olduğu taktirde alert sistemini devreye sokabilirsiniz.
+
 1. https://beszel.dev/guide/hub-installation
 
 #### Application monitoring & Tracing
@@ -214,7 +215,10 @@ Bundan sonrası zaten güvenlik ekibinin (blue team'in ) işi.
        
 
  ### Diagramlar ve planlama sistemleri
-Dia ve draw.io kullanarak planlama için c4model ve/veya uml diagramları çizmek için kullanabilirsiniz.
+Draw.io kullanarak planlama için c4model ve/veya uml diagramları çizmek için kullanabilirsiniz.
+
+1. https://www.drawio.com/
+
  ### IOT & Elektronik ihtiyaçlar
 Eğer elektronikte acemi iseniz.Sensörlerle ilgili ihtiyaçlarınız mevcutsa esp32  ancak işletim sistemine sahip bir elektronik cihaz lazım ise rasberyy-pi  kullanabilirsiniz.Maliyet ve kullanım açısındanda acemiler için uygun.
 

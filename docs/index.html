@@ -125,7 +125,8 @@ althoff
 
 Eğer bir junior geliştirici iseniz veya tek alanda çok fazla vakit harcadıysanız şu egzersizi
 yapmanızı veya bir proje geliştirmenizi isteyeceğim. Uçtan uca sürecin nasıl bir şey olduğunu
-anlamanızda oldukça faydalı olacaktır.
+anlamanızda oldukça faydalı olacaktır.<br>
+Not: Dil modeli yada claude falan kullanılmayacak.
 
 1. Yazılımı geliştireceğiniz alanı araştırın.O mesleği yapan insanlarla konuşun.
 
@@ -209,17 +210,14 @@ Eğer kapalı vpn kurmak yerine parola koruması ile bir proxy kurmak isterseniz
 https://www.squid-cache.org/
 
 ### Versiyon kontrol sistemi
-1. Eğer ekibiniz acemi ise githubta bir organizasyon açmanız daha sağlıklı olur.Ek olarak github workflow ve entegrasyonlarla sürecinizi daha rahat yönetebilirsiniz.
+Eğer ekibiniz acemi veya versiyon kontrol sistemine kafa yormak istemiyorsanız,githubta bir organizasyon açmanız daha sağlıklı olur.Ek olarak github workflow ve entegrasyonlarla sürecinizi daha rahat yönetebilirsiniz.
 
-2. Eğer ekibiniz tecrübeli veya gizlilik gerektiren bir sürece sahipseniz.Vps’sinize gitlab kurabilirsiniz.(Bu yönetim maliyeti getirir)
-https://about.gitlab.com/ 
-Ek olarak bu sayede CD/Cl süreçlerinide bu araçlar vesilesi ile gerçek hayata aktarabilirsiniz.
+
 
 #### Birkaç tavsiye
 1. Githubta dependabot ile ücretsiz bir şekilde otomatik olarak paketlerin güncellenmesini ve bilinen açıkları kontrol edebilirsiniz.
 
 2. Opencode kurulumu yaparak ücretsiz şekilde kurallar ve issue yönetimi yapabilirsiniz.
-
 ### Api/endpoint dökümantasyonu
 Platform bağımsız kesinlikle swagger eklentisi kullanın.Teşekkür ediceksiniz(not:ürüne çıkarken kapatmayı unutmayın)
 
@@ -265,8 +263,11 @@ Bundan sonrası zaten güvenlik ekibinin (blue team'in ) işi.
        
 
  ### Diagramlar ve planlama sistemleri
-Dia ve draw.io kullanarak planlama için c4model ve/veya uml diagramları çizmek için kullanabilirsiniz.
- ### IOT & Elektronik ihtiyaçlar
+Draw.io kullanarak planlama için c4model ve/veya uml diagramları çizmek için kullanabilirsiniz.
+
+1. https://www.drawio.com/
+
+### IOT & Elektronik ihtiyaçlar
 Eğer elektronikte acemi iseniz.Sensörlerle ilgili ihtiyaçlarınız mevcutsa esp32  ancak işletim sistemine sahip bir elektronik cihaz lazım ise rasberyy-pi  kullanabilirsiniz.Maliyet ve kullanım açısındanda acemiler için uygun.
 
 Eğer işletim sistemine sahip iot cihazınız varsa , ssh tarafındada kopukluklar yaşarsanız .Modemden port açıp cockpit ile linux tabanlı cihazını yönetebilirsiniz.
