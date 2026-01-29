@@ -47,7 +47,6 @@ https://www.linkedin.com/in/savasyildirim/
 https://www.linkedin.com/in/dereliahmet1/
 
 - Abdulcelil Doğan
- 
 https://www.linkedin.com/in/abdulcelil-dogan/
 
 - Liming Xie
