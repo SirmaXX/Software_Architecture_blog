@@ -5,6 +5,8 @@ yapmamalarını sağlamak.
 Sorumlu  / İnsiyatif alan kişilerinde en azından obsesyonlarını biraz bastırabilmektir.Kurumsal kurumlarda veya oturmuş düzene sahip kurumlarda çalışanlar dışında özellikle startuplarda çalışan insanlar için bir blog yazdım.
 Çünkü imkanlar kısıtlı ve her kuruş değerli olduğundan,kullandığım ve tavsiye edilen açık kaynak platform önerileriyle beraber, kendi çapımda bir rehber hazırlamak istedim. 
 
+HİÇBİR ŞEKİLDE İÇERİĞİN HAZIRLANMASINDA DİL MODELİ KULLANILMAMIŞTIR.TAMAMEN PÜR TECRÜBE İLE HAZIRLANMIŞTIR.
+
 
 Yakında konu ,konu veya talebe bağlı,daha detaylı rehberler hazırlanacaktır.
 
@@ -32,7 +34,7 @@ https://www.linkedin.com/in/ilker-manap-345a5529/
 - Oytun Özdemir
 https://www.linkedin.com/in/oytunistrator/
 
--Hanefi Gezer
+- Hanefi Gezer
 https://www.linkedin.com/in/hanefi-gezer-4a7788222/
 
 - Nejdet Çağdaş Yücesoy
@@ -47,11 +49,11 @@ https://www.linkedin.com/in/dereliahmet1/
 - Liming Xie
 https://www.linkedin.com/in/limingxie/
 
--Özcan acar
+- Özcan acar
 https://www.linkedin.com/in/acar1/
 
--Linlin yan
+- Linlin yan
 https://www.linkedin.com/in/yanlinlin82/
 
--Kerim Fırat
+- Kerim Fırat
 https://www.linkedin.com/in/kerim-firat-0a3b6338/
