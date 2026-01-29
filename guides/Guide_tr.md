@@ -103,6 +103,8 @@ on the ML lifecycle, system design-David ping
 
 Bu alanı ayrıca eklememin sebebi şudur.Gün sonunda müşterileriniz kpi ,roı gibi metriklerle çalışmak isteyecektir.Başka bir örnek olarak e-ticaret firmasında takım lideri olduğunuzu düşünelim.Sepet analizi yaparak ürün çeşitliliğini ve kampanyalarınızı organize edebilirsiniz.Gün sonunda Sizlerinde data scientist veya istatistikçi arkadaşlarınızla iletişim kurmanız gerekecektir.
 
+
+
 ## DataWarehouse Hazırlama / Veri mühendisliği
 Bu aşamada ise temel birkaç noktaya değineceğim buna ek olarak kullanabileceğiniz araçları "Kullanılabilecek platformlar ve uygulamalar" bölümünde yazdım.Burada amacımız  verilerimizi en verimli şekilde toplayıp,temizleyip,kullanabilmektir.
 ### ETL Süreci 
@@ -240,3 +242,5 @@ https://cockpit-project.org/
     8. https://rihab-feki.medium.com/building-a-modern-data-warehouse-from-scratch-d18d346a7118
 
     9. https://www.linkedin.com/pulse/ihtiya%C3%A7-analizi-kim-i%C3%A7in-ne-%C3%BCretmeli-fatih-candan-5kobf/
+
+    10.https://bytebytego.com/guides/the-ultimate-software-architect-knowledge-map/

@@ -6,6 +6,8 @@ Sorumlu  / İnsiyatif alan kişilerinde en azından obsesyonlarını biraz bast�
 Çünkü imkanlar kısıtlı ve her kuruş değerli olduğundan,kullandığım ve tavsiye edilen açık kaynak platform önerileriyle beraber, kendi çapımda bir rehber hazırlamak istedim. 
 
 
+Yakında konu ,konu veya talebe bağlı,daha detaylı rehberler hazırlanacaktır.
+
 ## Rehber
 guides/Guide_tr.md
 
@@ -19,7 +21,7 @@ rehbere guides klasörüne giderek erişebilirsiniz.
 
 
 ## Katkı Sağlayanlar 
-Yıllar boyunca çok fazla fikir alışverişi yaptığım ,kafasını şişirdiğim yetenekli insanların listesinide hazırladım.
+Yıllar boyunca çok fazla fikir alışverişi yaptığım ,kafasını şişirdiğim ,fikirlerini aldığım yetenekli ve tecrübeli insanların listesinide hazırladım.
 
 - Nikos Efthias
 https://www.linkedin.com/in/nikosefthias/
@@ -29,6 +31,9 @@ https://www.linkedin.com/in/ilker-manap-345a5529/
 
 - Oytun Özdemir
 https://www.linkedin.com/in/oytunistrator/
+
+-Hanefi Gezer
+https://www.linkedin.com/in/hanefi-gezer-4a7788222/
 
 - Nejdet Çağdaş Yücesoy
 https://www.linkedin.com/in/nejdet-cagdas-yucesoy/
@@ -42,3 +47,11 @@ https://www.linkedin.com/in/dereliahmet1/
 - Liming Xie
 https://www.linkedin.com/in/limingxie/
 
+-Özcan acar
+https://www.linkedin.com/in/acar1/
+
+-Linlin yan
+https://www.linkedin.com/in/yanlinlin82/
+
+-Kerim Fırat
+https://www.linkedin.com/in/kerim-firat-0a3b6338/
