@@ -46,6 +46,10 @@ https://www.linkedin.com/in/savasyildirim/
 - Ahmet Faruk Dereli
 https://www.linkedin.com/in/dereliahmet1/
 
+- Abdulcelil Doğan
+ 
+https://www.linkedin.com/in/abdulcelil-dogan/
+
 - Liming Xie
 https://www.linkedin.com/in/limingxie/
 
