@@ -175,9 +175,9 @@ Platform bağımsız kesinlikle swagger eklentisi kullanın.Teşekkür ediceksin
 
 
 ### Mail sistemi
-Eğer müşterilerinize mail sistemi kurmak isterseniz veya kendi sunucunuzda mail servisi  deploy etmek isterseniz  ve mail adminliği tecrübeniz yoksa modoboa sizler için birebir.Ek olarak docker tabanlı mailcow'da kullanabilirsiniz.
-1. https://modoboa.org/en/
-2. https://mailcow.email/
+Eğer müşterilerinize mail sistemi kurmak isterseniz veya kendi sunucunuzda mail servisi  deploy etmek isterseniz  ve mail adminliği tecrübeniz sizleri mailcow'a yönlendirelim
+1.  https://mailcow.email/
+
 
 
  ### Monitoring sistemi
@@ -193,7 +193,7 @@ https://github.com/jaegertracing/jaeger-ui
 ### Load balance & Cache
 
 
- ###  Test sistemleri
+###  Test sistemleri
 
 <img src="images/tr_images/apitesting.jpeg">
 
@@ -202,8 +202,13 @@ Elbette yazılım geliştirme aşamasında ,test yazmak ve/veya  bunun için vak
 1. https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk
 2. Kullandığınız programın test framework'üne göre unit test yazabilirsiniz.
 
-### CPU & Memory Flame Graphs
+#### CPU & Memory Flame Graphs
+Burada cpu ve memory flame tarafında yapacağınız şey o dilin kütüphanesini bulmaktır.
 
+####    Yük testi
+Bu paketi kullanın yük tarafını rahatlıkla test edebilirsiniz.
+
+https://www.npmjs.com/package/autocannon
  ### Güvenlik 
 İşte şimdi işin rengi oldukça değişecektir.Hiçbir zaman yatırımın yeterli olmadığı ancak çoğu kurumun veya kişinin yetişemediği bir alan ,ancak basit ve etkili birkaç tavsiye verebilirim.
 
@@ -212,6 +217,8 @@ Elbette yazılım geliştirme aşamasında ,test yazmak ve/veya  bunun için vak
     3. Cloudflare yapılandırması(ücretsiz versiyonu startuplar için yeterli olacaktır)
     4. Olabildiğince ufak araçlar ile yönetilebilir sistemler oluşturun.Kompleks yapılardan kaçının.
     5. Kullandığınız kütüphaneler ve altyapılar güncel olsun.
+    6. fail2ban kurun
+    7.  dependabot güncellemelerini yapın
 
 Bundan sonrası zaten güvenlik ekibinin (blue team'in ) işi.
        
