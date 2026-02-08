@@ -221,6 +221,7 @@ https://www.npmjs.com/package/autocannon
     5. Kullandığınız kütüphaneler ve altyapılar güncel olsun.
     6. fail2ban kurun
     7.  dependabot güncellemelerini yapın
+    8. Api key vb bilgilerin (secretların) environment'a göm 
 
 Bundan sonrası zaten güvenlik ekibinin (blue team'in ) işi.
        
