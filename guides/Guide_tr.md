@@ -9,8 +9,10 @@ Ancak işin başındaki birisi olduğunuzda ,birçok süreci az kişilik ekipler
 zorundasınız[Eğer imkanlarınız varsa her alanın uzmanı ile çalışmak tabiki çok daha iyi].Yapay
 zeka ve/veya chatbotlar kullansanız dahi,uçtan uca bir bilgi birikimine sahip olmak
 zorundasınız.Elbette mutlaka bir alanda uzmanlığınızın olduğunu varsaymak zorundayım fakat
-büyük fotoğrafı çekebilmeniz adına sizler için bir rehber hazırladım.
+büyük fotoğrafı çekebilmeniz adına sizler için ufak bir rehber hazırladım.
 
+
+<b style="color:red">Eğer sorularınız varsa veya yardıma ihtiyacınız varsa bana mail veya mesaj atabilirsiniz.Vakit buldukça örnek caseler ile zenginleştireceğim.</b>
 
 ## Proje Yönetimi ve ihtiyaç analizi
 

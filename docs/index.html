@@ -37,7 +37,7 @@
 
             <footer
                 style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border-color); color: var(--text-muted); font-size: 0.9rem;">
-                <p>&copy; 2026 Software Architecture Blog. All rights reserved.</p>
+                <p>&copy; 2026 </p>
             </footer>
         </main>
     </div>
@@ -55,6 +55,7 @@
     <script type="text/markdown" id="markdown-source">
 
 
+
 ## Eğitim ve roadmap
 Artık ürünlerin ,bilgisayar bilimleri veya bilişim mesleklerindeki branşlaşmaların arttığı ve 5-6
 sene öncesine nazaran ürünler daha detaylı olduğu bir süreçteyiz(yapay zeka geliştirmeyen kurum
@@ -63,7 +64,7 @@ Ancak işin başındaki birisi olduğunuzda ,birçok süreci az kişilik ekipler
 zorundasınız[Eğer imkanlarınız varsa her alanın uzmanı ile çalışmak tabiki çok daha iyi].Yapay
 zeka ve/veya chatbotlar kullansanız dahi,uçtan uca bir bilgi birikimine sahip olmak
 zorundasınız.Elbette mutlaka bir alanda uzmanlığınızın olduğunu varsaymak zorundayım fakat
-büyük fotoğrafı çekebilmeniz adına sizler için bir rehber hazırladım.
+büyük fotoğrafı çekebilmeniz adına sizler için ufak bir rehber hazırladım.
 
 
 ## Proje Yönetimi ve ihtiyaç analizi
@@ -117,6 +118,9 @@ Bir yazılım mimarı & full stack developer olarak yazılım geliştirme alanı
 3. Master Software Architecure A pracmatic guide -MACIEJ “MJ” jedrzejewski
 4. The Self-Taught Programmer_ The Definitive Guide to Programming Professionally-Cory
 althoff
+5. https://kurumsaljava.com/2009/01/15/bizimalemcom-bir-sistemin-tasarlanis-hikayesi/  uçtan uca bir proje kesinlikle bu bloğu okumalısınız.
+
+6. https://bytebytego.com/guides/the-ultimate-software-architect-knowledge-map/
 
 
 ### Yazılım geliştirme süreci antremanı
@@ -153,6 +157,8 @@ v=JwSS70SZdyM&list=PLWKjhJtqVAblQe2CCWqV4Zy3LY01Z8aF1
 on the ML lifecycle, system design-David ping
 
 Bu alanı ayrıca eklememin sebebi şudur.Gün sonunda müşterileriniz kpi ,roı gibi metriklerle çalışmak isteyecektir.Başka bir örnek olarak e-ticaret firmasında takım lideri olduğunuzu düşünelim.Sepet analizi yaparak ürün çeşitliliğini ve kampanyalarınızı organize edebilirsiniz.Gün sonunda Sizlerinde data scientist veya istatistikçi arkadaşlarınızla iletişim kurmanız gerekecektir.
+
+
 
 ## DataWarehouse Hazırlama / Veri mühendisliği
 Bu aşamada ise temel birkaç noktaya değineceğim buna ek olarak kullanabileceğiniz araçları "Kullanılabilecek platformlar ve uygulamalar" bölümünde yazdım.Burada amacımız  verilerimizi en verimli şekilde toplayıp,temizleyip,kullanabilmektir.
@@ -218,18 +224,21 @@ Eğer ekibiniz acemi veya versiyon kontrol sistemine kafa yormak istemiyorsanız
 1. Githubta dependabot ile ücretsiz bir şekilde otomatik olarak paketlerin güncellenmesini ve bilinen açıkları kontrol edebilirsiniz.
 
 2. Opencode kurulumu yaparak ücretsiz şekilde kurallar ve issue yönetimi yapabilirsiniz.
+
 ### Api/endpoint dökümantasyonu
 Platform bağımsız kesinlikle swagger eklentisi kullanın.Teşekkür ediceksiniz(not:ürüne çıkarken kapatmayı unutmayın)
 
 
 ### Mail sistemi
-Eğer müşterilerinize mail sistemi kurmak isterseniz veya kendi sunucunuzda mail servisi  deploy etmek isterseniz  ve mail adminliği tecrübeniz yoksa modoboa sizler için birebir.Ek olarak docker tabanlı mailcow'da kullanabilirsiniz.
-1. https://modoboa.org/en/
+Eğer müşterilerinize mail sistemi kurmak isterseniz veya kendi sunucunuzda mail servisi  deploy etmek isterseniz  ve mail adminliği tecrübeniz sizleri mailcow'a yönlendirelim
+1.  https://mailcow.email/
+
 
 
  ### Monitoring sistemi
 Sunucu tarafında kaynaklarınız kıt ise beszel ancak kaynaklarınız fazla ise zabbix kullanabilirsiniz.
 Hem bare metal hem docker tabanlı olarak  agentlarınızı rahatlıkla kurabilirsiniz.Gün sonunda kaynaklarınızı gözlemlemek ve sunucularınızda sorun olduğu taktirde alert sistemini devreye sokabilirsiniz.
+
 1. https://beszel.dev/guide/hub-installation
 
 #### Application monitoring & Tracing
@@ -239,7 +248,7 @@ https://github.com/jaegertracing/jaeger-ui
 ### Load balance & Cache
 
 
- ###  Test sistemleri
+###  Test sistemleri
 
 <img src="images/tr_images/apitesting.jpeg">
 
@@ -248,8 +257,13 @@ Elbette yazılım geliştirme aşamasında ,test yazmak ve/veya  bunun için vak
 1. https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk
 2. Kullandığınız programın test framework'üne göre unit test yazabilirsiniz.
 
-### CPU & Memory Flame Graphs
+#### CPU & Memory Flame Graphs
+Burada cpu ve memory flame tarafında yapacağınız şey o dilin kütüphanesini bulmaktır.
 
+####    Yük testi
+Bu paketi kullanın yük tarafını rahatlıkla test edebilirsiniz.
+
+https://www.npmjs.com/package/autocannon
  ### Güvenlik 
 İşte şimdi işin rengi oldukça değişecektir.Hiçbir zaman yatırımın yeterli olmadığı ancak çoğu kurumun veya kişinin yetişemediği bir alan ,ancak basit ve etkili birkaç tavsiye verebilirim.
 
@@ -258,6 +272,8 @@ Elbette yazılım geliştirme aşamasında ,test yazmak ve/veya  bunun için vak
     3. Cloudflare yapılandırması(ücretsiz versiyonu startuplar için yeterli olacaktır)
     4. Olabildiğince ufak araçlar ile yönetilebilir sistemler oluşturun.Kompleks yapılardan kaçının.
     5. Kullandığınız kütüphaneler ve altyapılar güncel olsun.
+    6. fail2ban kurun
+    7.  dependabot güncellemelerini yapın
 
 Bundan sonrası zaten güvenlik ekibinin (blue team'in ) işi.
        
@@ -267,7 +283,7 @@ Draw.io kullanarak planlama için c4model ve/veya uml diagramları çizmek için
 
 1. https://www.drawio.com/
 
-### IOT & Elektronik ihtiyaçlar
+ ### IOT & Elektronik ihtiyaçlar
 Eğer elektronikte acemi iseniz.Sensörlerle ilgili ihtiyaçlarınız mevcutsa esp32  ancak işletim sistemine sahip bir elektronik cihaz lazım ise rasberyy-pi  kullanabilirsiniz.Maliyet ve kullanım açısındanda acemiler için uygun.
 
 Eğer işletim sistemine sahip iot cihazınız varsa , ssh tarafındada kopukluklar yaşarsanız .Modemden port açıp cockpit ile linux tabanlı cihazını yönetebilirsiniz.
@@ -288,7 +304,9 @@ https://cockpit-project.org/
     8. https://rihab-feki.medium.com/building-a-modern-data-warehouse-from-scratch-d18d346a7118
 
     9. https://www.linkedin.com/pulse/ihtiya%C3%A7-analizi-kim-i%C3%A7in-ne-%C3%BCretmeli-fatih-candan-5kobf/
-    </script>
+
+    10.https://bytebytego.com/guides/the-ultimate-software-architect-knowledge-map/
+</script>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
