@@ -13,7 +13,9 @@ Yakında konu ,konu veya talebe bağlı,daha detaylı rehberler hazırlanacaktı
 ## Rehber
 guides/Guide_tr.md
 
-rehbere guides klasörüne giderek erişebilirsiniz.
+rehbere guides klasörüne giderek erişebilirsiniz.Veya bu adresten doğrudan okuyabilirsiniz.
+https://sirmaxx.github.io/Software_Architecture_blog/
+
 ## Nasıl Katkı sağlayabilirim
 
 1. Repoyu forklayın
