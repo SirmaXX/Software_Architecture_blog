@@ -202,7 +202,8 @@ https://github.com/jaegertracing/jaeger-ui
 Elbette yazılım geliştirme aşamasında ,test yazmak ve/veya  bunun için vakit harcamak oldukça can sıkıcı farkındayım.Eğer test konusunda tembellik yapmak isterseniz en azından google lighthouse eklentisi kullanın.(Temel seviyede bir web uygulamasındaki gerekli kriterleri ve eksikliklerinizi raporlayacaktır)
 
 1. https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk
-2. Kullandığınız programın test framework'üne göre unit test yazabilirsiniz.
+2. https://validator.w3.org/  (html testleri için) kesinlike kullanın.
+3. Kullandığınız programın test framework'üne göre unit test yazabilirsiniz.
 
 #### CPU & Memory Flame Graphs
 Burada cpu ve memory flame tarafında yapacağınız şey o dilin kütüphanesini bulmaktır.
