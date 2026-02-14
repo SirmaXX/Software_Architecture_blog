@@ -45,6 +45,9 @@ https://www.linkedin.com/in/nejdet-cagdas-yucesoy/
 - Savaş YILDIRIM
 https://www.linkedin.com/in/savasyildirim/
 
+- İlhan Göktaş
+https://www.linkedin.com/in/ilhan-goktas-96469a118/
+
 - Ahmet Faruk Dereli
 https://www.linkedin.com/in/dereliahmet1/
 
@@ -62,3 +65,5 @@ https://www.linkedin.com/in/yanlinlin82/
 
 - Kerim Fırat
 https://www.linkedin.com/in/kerim-firat-0a3b6338/
+
+-
