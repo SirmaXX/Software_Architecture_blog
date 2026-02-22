@@ -1,0 +1,209 @@
+## Education and roadmap
+We are now in a process where there is an increase in specialization in computer science or IT professions, and products are much more detailed than 5-6 years ago (there is no institution left that does not develop artificial intelligence).
+However, when you are someone at the beginning of the road, you have to manage many processes with small teams [If you have the means, working with experts in each field is of course much better]. Even if you use artificial intelligence and/or chatbots, you have to have end-to-end knowledge. Of course, I have to assume you definitely have expertise in some area, but to help you see the big picture, I have prepared a small guide for you.
+
+<b style="color:red">If you have questions or need help, you can send me an email or a message. I will enrich it with example cases as I find time.</b>
+
+## Project Management and requirements analysis
+
+## Requirements analysis
+If your institution has a business analyst, product manager, or a relevant unit, they will guide you anyway.<br>
+If you do not have such an employee, at least talk to the customer with a software developer/producer mentality. <br>
+In most institutions/organizations, code is written blindly before the requirements are understood.
+
+<h3 style="color:red"> If you can't do anything else, ask the customer about their needs! </h3>
+Let me share the simplest requirements determination process you can follow.
+
+1.  Ask the customer about their requirements and observe the workplace. (This is basically the skipped point)
+2.  Research the field your customer works in.
+3.  Research the competitors and alternative versions of the project you are working on. Write down the features in that product.
+4.  Include future needs that you might encounter in the requirements list.
+
+<b>If you determine the needs well, 60% of your work will already be done!</b>
+
+##  Project document
+Preparing SDD (software development document) documents for your projects will be beneficial for you. Because by compiling the requirements and the entire process of the software to be developed, it will make your software development process shorter and of higher quality.
+
+### Choice of development environment
+The development environment depends on the team's ability to adapt. Let's take web services and the web development process as a default. At the most fundamental level, you can make an average healthy decision by asking these questions.<br>
+1. Most used front-end frameworks by the people in the team
+2. Most used back-end frameworks by the people in the team
+3. Most used database systems by the people in the team <br>
+
+The law of large numbers usually works :) .</br>However, if you want to make a choice depending on disagreements or needs, I can give you personal recommendations like this.
+
+#### Frontend framework and library Selection
+1. If you have static pages or few pages: A simple bootstrap or any css library and a few libraries like jquery will suffice. You can receive and send data with simple ajax requests (by constructing a monolith structure)
+
+2. If the components, screens are constantly renewed and there is a multi-layered structure with many pages or a situation where many services exist together, my preference is: Svelte framework.
+
+#### Backend framework and library Selection 
+These recommendations are entirely a list emerging from my personal experiences.
+1. If you want to develop games and there is a lot of asynchronous processing: nodejs-express
+2. If I'm going to develop an analytical service or microservice: FastAPI
+3. If I'm going to develop simple crud tasks or a small project: Flask microframework 
+it will be logical to use.
+
+## Software development field resources
+As a software architect & full stack developer, if you want to take a wide picture in the field of software development or see your shortcomings, these resources will be quite useful for you.
+1. https://www.youtube.com/watch?v=m8Icp_Cid5o&t=4s
+2. https://www.youtube.com/watch?v=F2FmTdLtb_4&t=2600s
+3. Master Software Architecture A pragmatic guide -MACIEJ “MJ” jedrzejewski
+4. The Self-Taught Programmer_ The Definitive Guide to Programming Professionally-Cory althoff
+5. https://kurumsaljava.com/2009/01/15/bizimalemcom-bir-sistemin-tasarlanis-hikayesi/ an end-to-end project definitely you should read this blog.
+6. https://bytebytego.com/guides/the-ultimate-software-architect-knowledge-map/
+
+### Software development process practice
+
+<img src="images/tr_images/mimari.gif">
+
+If you are a junior developer or if you have spent too much time in a single field, I will ask you to do this exercise or develop a project. It will be quite helpful for you to understand what the end-to-end process is like.<br>
+Note: Language models or Claude etc. are not to be used.
+
+1. Research the field where you will develop the software. Talk to people doing that profession.
+2. Prepare a software development document.
+3. Buy a domain and a vps.
+4. Develop a monolith, highly layered structure, or several microservices.
+5. Set up a web server.
+6. Connect this service to the web server. Try to access your application via the domain.
+7. Examine logs within your own server.
+8. Do your testing.
+If you execute this entire process yourself, your horizons will broaden. There is no shortcut, but I have listed tools you can easily use in the "Usable platforms and applications" section.
+
+## Data Science resources
+Even if you have no knowledge in the field of data, I am sharing a few tutorials with sample projects so that you can get a few ideas about what you can do with data. You can anticipate how you can evaluate the data you have. (Of course, you need to know statistics at a basic level.)
+1. https://www.youtube.com/watch?v=JwSS70SZdyM&list=PLWKjhJtqVAblQe2CCWqV4Zy3LY01Z8aF1
+2. https://www.youtube.com/watch?v=o6vbe5G7xNo
+3. The Machine Learning Solutions Architect Handbook Practical strategies and best practices on the ML lifecycle, system design-David ping
+
+The reason I also added this field is this. By the end of the day, your customers will want to work with metrics like kpi, roi. As another example, let's assume you are a team leader in an e-commerce company. You can organize your product diversity and campaigns by doing basket analysis. Eventually, you will need to communicate with your data scientist or statistician friends.
+
+## Preparing DataWarehouse / Data engineering
+At this stage, I will touch on a few basic points, in addition, I have written the tools you can use in the "Usable platforms and applications" section. Our goal here is to collect, clean, and use our data in the most efficient way.
+### ETL Process
+The process we call Etl is an operation where we collect, process, and make our data available for use.
+
+ <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*egIjQVejhHPAy5PVlCV55w.png">
+
+#### Extract 
+Extracting is the process of collecting and saving data from sources such as web scraping methods, APIs, logs, sensors, etc.
+The easiest way to do this job is to create a cronjob, run a python script, and continuously save data.
+
+For using data at the analytical level, you can use PostgreSQL, Clickhouse.
+#### Transform 
+While saving the extracted data or sending it to a client, it is put into a cleaning phase and an organized form. The classic operations done are:
+1. Formatting the incoming data. For example, the date of incoming data is formatted and/or a save date is added (YYYY-MD-DD).
+2. Cleaning the incoming data from ascii or sanskrit etc. expressions.
+
+#### Load 
+This is the stage where we will use the data. Whether you will use it for reporting, data analytics, or training a machine learning model depends on your needs. The stage where we load the prepared data is called the load stage.
+
+## Usable platforms and applications
+If you are doing web development or developing web services. If you have a small team and budget. Now, by listing the tools you might need, you will be able to learn open-source tools cost-effectively without needing to foresee many things. I have listed the products I have used before and recommend for your customers and team.
+### Customer/User support
+By using open source software called Rustdesk and setting up this infrastructure on your vps server, you can use it indefinitely as an alternative to software like anydesk, teamviewer.
+1. https://rustdesk.com/
+### Business/Project management
+For project management, instead of projects like jira, by using taiga, you can either install it on your vps or use it via taiga.io.
+1. https://taiga.io/
+
+### Webservices and proxies
+#### Reverse proxy for web services
+If you are not going to manage millions of requests at once (you probably won't), using Caddy is a very good option because:
+1. Automatically completes ssl installation with certbot.
+2. Caddy has a much simpler configuration structure.
+3. Supports HTTP/2 and HTTP3, but in caddy HTTP/3 support comes by default.
+
+https://caddyserver.com/
+
+#### Proxy
+If you want to set up a proxy with password protection instead of a closed vpn and need a simple structure, squid proxy is right for you, it does not get stuck in tls, it does not give headaches during setup. (For example, when you use mitm proxy, it gets stuck in tls.)
+
+https://www.squid-cache.org/
+
+### Version control system
+If your team is inexperienced or you don't want to worry about version control systems, opening an organization on GitHub would be healthier. Additionally, you can manage your process more easily with github workflow and integrations.
+
+#### A few recommendations
+1. On GitHub, with dependabot, you can automatically update packages and check known vulnerabilities for free.
+
+2. By installing Opencode, you can set rules and manage issues for free.
+
+### Api/endpoint documentation
+Platform-independent, definitely use the swagger plugin. You will thank me (note: do not forget to turn it off when going to production).
+
+### Mail system
+If you want to set up an email system for your customers or deploy a mail service on your own server and if you have mail administration experience, let us direct you to mailcow.
+1.  https://mailcow.email/
+
+ ### Monitoring system
+If your resources on the server side are scarce, you can use beszel, but if your resources are plentiful, use zabbix. You can easily install your agents on both bare metal and docker base. At the end of the day, you can observe your resources and deploy the alert system in case of problems on your servers.
+
+1. https://beszel.dev/guide/hub-installation
+
+#### Application monitoring & Tracing
+##### Tracing
+In this process, we can see in what phase and for how long each request progresses.
+https://github.com/jaegertracing/jaeger-ui
+### Load balance & Cache
+
+###  Testing systems
+
+<img src="images/tr_images/apitesting.jpeg">
+
+Of course, during the software development stage, writing tests and/or spending time for this is quite annoying, I am aware. If you want to be lazy about testing, at least use the Google Lighthouse plugin. (It will report the necessary criteria and your deficiencies in a web application at a basic level.)
+
+1. https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk
+2. https://validator.w3.org/  (for html tests) definitely use it.
+3. Depending on the testing framework of the program you use, you can write unit tests.
+
+#### CPU & Memory Flame Graphs
+What you will do here on the cpu and memory flame side is to find the library for that language.
+
+####    Load testing
+Use this package, you can easily test the load side.
+
+https://www.npmjs.com/package/autocannon
+ ### Security 
+Here is where things will change quite a bit. It is an area where investment is never enough, but most institutions or people fail to catch up, but I can give a few simple and effective recommendations.
+
+    1. Always keep backups.
+    2. Set up a firewall(ufw).
+    3. Cloudflare configuration (free version will be enough for startups).
+    4. Build manageable systems with as compact tools as possible. Avoid complex systems.
+    5. Always keep the libraries and infrastructures you use up to date.
+    6. Install fail2ban.
+    7. Perform dependabot updates.
+    8. Embed Api key etc. information (secrets) into the environment.
+
+From here onwards is the security team's (blue team's) job anyway.
+       
+
+ ### Diagrams and planning systems
+By using Draw.io, you can use it to draw c4model and/or uml diagrams for planning.
+
+1. https://www.drawio.com/
+
+ ### IOT & Electronics needs
+If you are a novice in electronics. If you have needs regarding sensors, use esp32, but if you need an electronic device with an operating system you can use raspberry-pi. It's suitable for novices in terms of cost and usability.
+
+If you have an iot device with an operating system, and you experience disconnects on the ssh side. You can open a port from the modem and manage your linux-based device with cockpit.
+
+1. Cockpit 
+https://cockpit-project.org/
+
+
+# References
+    1. https://newsletter.pragmaticengineer.com/p/thriving-as-a-founding-engineer
+    2. https://hypernestlabs.com/guides/hiring-founding-engineers-guide
+    3. https://40226375.fs1.hubspotusercontent-na1.net/hubfs/40226375/Founding%20Engineer%20Guide.pdf
+    4. https://www.getclera.com/blog/the-complete-interview-guide-for-founding-engineers-at-ai-startups
+    5. https://www.quora.com/What-does-it-mean-to-be-a-founding-engineer
+    6. https://www.paraform.com/blog/what-is-a-founding-engineer
+    7. https://userjot.com/blog/caddy-reverse-proxy-nginx-alternative
+
+    8. https://rihab-feki.medium.com/building-a-modern-data-warehouse-from-scratch-d18d346a7118
+
+    9. https://www.linkedin.com/pulse/ihtiya%C3%A7-analizi-kim-i%C3%A7in-ne-%C3%BCretmeli-fatih-candan-5kobf/
+
+    10.https://bytebytego.com/guides/the-ultimate-software-architect-knowledge-map/
