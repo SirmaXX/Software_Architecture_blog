@@ -73,6 +73,8 @@ zorundasınız.Elbette mutlaka bir alanda uzmanlığınızın olduğunu varsayma
 büyük fotoğrafı çekebilmeniz adına sizler için ufak bir rehber hazırladım.
 
 
+<b style="color:red">Eğer sorularınız varsa veya yardıma ihtiyacınız varsa bana mail veya mesaj atabilirsiniz.Vakit buldukça örnek caseler ile zenginleştireceğim.</b>
+
 ## Proje Yönetimi ve ihtiyaç analizi
 
 ## İhtiyaç analizi
@@ -261,7 +263,7 @@ https://github.com/jaegertracing/jaeger-ui
 Elbette yazılım geliştirme aşamasında ,test yazmak ve/veya  bunun için vakit harcamak oldukça can sıkıcı farkındayım.Eğer test konusunda tembellik yapmak isterseniz en azından google lighthouse eklentisi kullanın.(Temel seviyede bir web uygulamasındaki gerekli kriterleri ve eksikliklerinizi raporlayacaktır)
 
 1. https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk
-2. https://validator.w3.org/  (html testleri için) kullanın
+2. https://validator.w3.org/  (html testleri için) kesinlike kullanın.
 3. Kullandığınız programın test framework'üne göre unit test yazabilirsiniz.
 
 
@@ -272,7 +274,18 @@ Burada cpu ve memory flame tarafında yapacağınız şey o dilin kütüphanesin
 Bu paketi kullanın yük tarafını rahatlıkla test edebilirsiniz.
 
 https://www.npmjs.com/package/autocannon
- ### Güvenlik 
+### Yük hesaplama
+#### (Little's Law — Kapasite Formülü-kaç worker lazım)
+<code>
+L = λ × W</code>
+
+L = sistemdeki ortalama istek sayısı  |  λ = gelen hız (req/s)  |  W = ortalama bekleme süresi (s)
+
+Örnek: 10 req/s geliyor, her iş 0.5s sürüyor → sistemde ortalama 5 istek bulunur.
+
+Worker kapasitesi = worker_count / işlem_süresi_s. RPS bunu aşarsa kuyruk büyür.
+
+ ### Güvenlik
 İşte şimdi işin rengi oldukça değişecektir.Hiçbir zaman yatırımın yeterli olmadığı ancak çoğu kurumun veya kişinin yetişemediği bir alan ,ancak basit ve etkili birkaç tavsiye verebilirim.
 
     1. Sürekli yedek tutun .

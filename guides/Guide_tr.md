@@ -211,7 +211,21 @@ Burada cpu ve memory flame tarafında yapacağınız şey o dilin kütüphanesin
 ####    Yük testi
 Bu paketi kullanın yük tarafını rahatlıkla test edebilirsiniz.
 
+
 https://www.npmjs.com/package/autocannon
+### Yük hesaplama
+#### (Little's Law — Kapasite Formülü-kaç worker lazım)
+<code>
+L = λ × W</code>
+
+L = sistemdeki ortalama istek sayısı  |  λ = gelen hız (req/s)  |  W = ortalama bekleme süresi (s)
+
+Örnek: 10 req/s geliyor, her iş 0.5s sürüyor → sistemde ortalama 5 istek bulunur.
+
+Worker kapasitesi = worker_count / işlem_süresi_s. RPS bunu aşarsa kuyruk büyür.
+
+
+
  ### Güvenlik 
 İşte şimdi işin rengi oldukça değişecektir.Hiçbir zaman yatırımın yeterli olmadığı ancak çoğu kurumun veya kişinin yetişemediği bir alan ,ancak basit ve etkili birkaç tavsiye verebilirim.
 

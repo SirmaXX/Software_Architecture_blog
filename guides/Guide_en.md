@@ -164,7 +164,18 @@ What you will do here on the cpu and memory flame side is to find the library fo
 Use this package, you can easily test the load side.
 
 https://www.npmjs.com/package/autocannon
- ### Security 
+### Load Calculation
+#### (Little's Law — Capacity Formula — how many workers are needed)
+<code>
+L = λ × W</code>
+
+L = average number of requests in the system  |  λ = arrival rate (req/s)  |  W = average wait time (s)
+
+Example: 10 req/s arriving, each job takes 0.5s → average 5 requests in the system.
+
+Worker capacity = worker_count / processing_time_s. If RPS exceeds this, the queue grows.
+
+ ### Security
 Here is where things will change quite a bit. It is an area where investment is never enough, but most institutions or people fail to catch up, but I can give a few simple and effective recommendations.
 
     1. Always keep backups.
